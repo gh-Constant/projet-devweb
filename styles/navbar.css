@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
+    background-color: #26282c;
 }
 
 nav {
@@ -17,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: 1;
 }
@@ -47,7 +48,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-size: 95%;
     font-weight: 400;
     padding: 4px 8px;
@@ -55,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f5f5f5;
+    background-color: #323232;
 }
 
 .hamburger {
@@ -104,7 +105,7 @@ nav ul li a:hover {
     width: 60%;
     height: 100vh;
     padding: 20% 0;
-    background: rgba(255, 255, 255);
+    background: rgb(37, 36, 36);
     transition: all 0.5s ease-in;
     z-index: 2;
 }
@@ -131,7 +132,7 @@ nav ul li a:hover {
 }
 
 .menubar ul li a:hover {
-    background-color: #f5f5f5;
+    background-color: #323232;
 }
 @media screen and (max-width: 790px) {
     .hamburger {
@@ -140,4 +141,24 @@ nav ul li a:hover {
     nav ul {
         display: none;
     }
+}
+
+
+.gradient-bg {
+    /* Full screen background */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #3b1053, #3e1087, #1e2b93);
+    background-size: 400% 400%;
+
+    /* Blurring the background */
+    filter: blur(5px);
+
+    /* Slight transparency */
+    opacity: 0.95;
+    z-index: -1;
 }
