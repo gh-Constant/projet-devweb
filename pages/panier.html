@@ -54,10 +54,11 @@
 
     <h1>Votre Panier</h1>
 
-    <table>
+    <table id="cart-table">
         <thead>
             <tr>
                 <th>Produit</th>
+                <th></th>
                 <th>Prix</th>
                 <th>Quantité</th>
                 <th>Total</th>
@@ -65,37 +66,41 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr data-id="1" data-price="199.99">
                 <td>Programme 1</td>
+                <td><img src="" alt=""></td>
                 <td>199.99 €</td>
                 <td><input type="number" value="2" class="quantite"></td>
-                <td>399.98 €</td>
+                <td class="item-total">399.98 €</td>
                 <td><button class="supprime">Supprimer</button></td>
             </tr>
-            <tr>
+            <tr data-id="2" data-price="149.99">
                 <td>Programme 2</td>
+                <td><img src="" alt=""></td>
                 <td>149.99 €</td>
                 <td><input type="number" value="1" class="quantite"></td>
-                <td>149.99 €</td>
+                <td class="item-total">149.99 €</td>
                 <td><button class="supprime">Supprimer</button></td>
             </tr>
-            <tr>
+            <tr data-id="3" data-price="79.99">
                 <td>Programme 3</td>
+                <td><img src="" alt=""></td>
                 <td>79.99 €</td>
                 <td><input type="number" value="3" class="quantite"></td>
-                <td>239.97 €</td>
+                <td class="item-total">239.97 €</td>
                 <td><button class="supprime">Supprimer</button></td>
             </tr>
         </tbody>
     </table>
 
     <div class="fin">
-        <div class="total">Total : 789.94 €</div>
+        <div id="cart-total" class="total">Total : 789.94 €</div>
         <button class="passer_commande">Passer la commande</button>
     </div>
 
     
-    <script src="/js/navbar.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/panier.js"></script>
 
 </body>
 </html>
