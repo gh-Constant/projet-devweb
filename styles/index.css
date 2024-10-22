@@ -5,8 +5,30 @@
   }
 
   .Titre {
-    font-size: 20px; /* Taille de la police */
-    font-weight: bold; /* Gras */
-    text-align: center; /* Centrer le texte */
-    color
+    text-align: center;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#ff0000, #1100fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
   }
+
+
+  .body {
+    /* Full screen background */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Gradient background */
+    background: linear-gradient(135deg, #3b1053, #3e1087, #1e2b93);
+    background-size: 400% 400%;
+
+    /* Blurring the background */
+    filter: blur(5px);
+
+    /* Slight transparency */
+    opacity: 0.95;
+    z-index: -10;
+}
