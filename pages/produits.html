@@ -1,55 +1,201 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" type="text/css" target="_blank" href="../styles/navbar.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Cheats</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #1e0b2e, #1e2a4a);
+            color: white;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(30, 11, 46, 0);
+            padding: 1rem 2rem;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+        nav.scrolled {
+            background-color: rgba(30, 11, 46, 1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        header {
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(90deg, #4a90e2, #50e3c2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .search-bar {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0.5rem;
+            border-radius: 25px;
+            border: none;
+            font-size: 1rem;
+        }
+        .popular {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .popular a {
+            color: #4a90e2;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #0a0a1a;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer-section {
+            flex: 1;
+        }
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        .footer-section ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+    </style>
 </head>
 <body>
-<nav>
-    <div class="logo">
-        <h1>Vente de programmes</h1>
-    </div>
+<nav id="navbar">
     <ul>
-        <li>
-            <a href="../index.html">Acceuil</a>
-        </li>
-        <li>
-            <a href="../pages/produits.html">Produits</a>
-        </li>
-        <li>
-            <a href="../pages/produits.html">Panier</a>
-        </li>
-        <li>
-            <a  href="../pages/apropos.html">A propos</a>
-        </li>
+        <li><a href="#">Vente de programmes</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Produits</a></li>
+        <li><a href="#">Panier</a></li>
+        <li><a href="#">A propos</a></li>
     </ul>
-    <div class="hamburger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-    </div>
 </nav>
-<div class="menubar">
-    <ul>
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Services</a>
-        </li>
-        <li>
-            <a href="#">Blog</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-    </ul>
-</div>
-<div class="gradient-bg"> </div>
 
-<script src="/js/navbar.js"></script>
+<header>
+    <h1>Private cheats</h1>
+    <h2>A wide selection of cheats for games</h2>
+    <input type="text" class="search-bar" placeholder="Search for games and cheats">
+    <div class="popular">
+        Popular:
+        <a href="#">cheats for Tarkov</a>
+        <a href="#">cheats for Warzone</a>
+        <a href="#">cheats for APEX</a>
+        <a href="#">cheats for DAYZ</a>
+        <a href="#">cheats for RUST</a>
+    </div>
+</header>
+
+<main>
+    <h2>Welcome to our Cheat Platform</h2>
+    <p>Here you can find a wide variety of cheats for popular games. Our platform offers secure and undetectable cheats to enhance your gaming experience.</p>
+    <h3>Featured Cheats</h3>
+    <ul>
+        <li>Aimbot for FPS games</li>
+        <li>Wallhacks for battle royale games</li>
+        <li>Auto-farming bots for MMORPGs</li>
+        <li>Speed hacks for racing games</li>
+    </ul>
+    <p>Browse our extensive collection and find the perfect cheat for your favorite game!</p>
+</main>
+
+<footer>
+    <div class="footer-section">
+        <h3>CHEATSELLER</h3>
+        <p>Buy, play and win with our private cheats from cheatseller.</p>
+        <p>&copy; 2024 CheatSeller. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">YouTube</a>
+            <a href="#">Telegram</a>
+            <a href="#">Discord</a>
+            <a href="#">VK</a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <h3>Shop</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog (news)</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Get technical support</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Information</h3>
+        <ul>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Delivery and Payment, Returns</a></li>
+            <li><a href="#">Cooperation and contacts</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
 </body>
 </html>
