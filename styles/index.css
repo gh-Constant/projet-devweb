@@ -3,3 +3,10 @@
     color: white; /* Couleur du texte */
     height: 60px; /* Exemple de hauteur */
   }
+
+  .Titre {
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte */
+    color
+  }
