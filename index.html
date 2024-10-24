@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <!-- Navbarr -->
-<nav>
-    <div class="navbar">
-        <ul>
-        <li><a href="pages/apropos.html">apropos</a></li>
-        <li><a href="pages/panier.html">panier</a></li>
-        <li><a href="pages/produits.html"></a></li>
-    </ul>
-    </div>
-</nav>
+
 <!-- /Navbarr -->
 <body class="body">
 
@@ -23,13 +15,35 @@
  <div class="Titre">
     <h1>Private cheats<br>A wide selection of<br> cheats for games</h1>
 </div>
-<div class="searchbar">
-    <form action="pages/produits.html" method="get">
-        <input type="text" name="search" id="search" placeholder="Search for a game">
-        <button type="submit">Search</button>
+
+<!-- Carrousel ne nos jeux  -->
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="card floating" style="--offset: -2; animation-delay: 0.2s;">
+            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
+            <div class="card-title">PUBG</div>
+        </div>
+        <div class="card floating" style="--offset: -1; animation-delay: 0.4s;">
+            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
+            <div class="card-title">COD: MW3 - WARZONE</div>
+        </div>
+        <div class="card floating" style="--offset: 0; animation-delay: 0.6s;">
+            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
+            <div class="card-title">Escape from Tarkov</div>
+        </div>
+        <div class="card floating" style="--offset: 1; animation-delay: 0.8s;">
+            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
+            <div class="card-title">APEX</div>
+        </div>
+        <div class="card floating" style="--offset: 2; animation-delay: 1s;">
+            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
+            <div class="card-title">DayZ</div>
+        </div>
+    </div>
 </div>
-
-
+<button class="nav-button prev">&lt;</button>
+<button class="nav-button next">&gt;</button>
 <!-- /fin de presentation -->
 
 
