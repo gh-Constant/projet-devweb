@@ -1,0 +1,89 @@
+.navbar {
+    background-color: #3498db; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    height: 60px; /* Exemple de hauteur */
+  }
+
+  .Titre {
+    text-align: center;
+    font-size: 42px;
+    background: -webkit-linear-gradient(#ff0000, #1100fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4a0e4e, #2e0647);
+    font-family: Arial, sans-serif;
+}
+.carousel {
+    display: flex;
+    perspective: 1000px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1200px;
+}
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.card {
+    width: 220px;
+    height: 330px;
+    margin: 0 10px;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotateY(calc(var(--offset) * 50deg)) scaleY(calc(1 + var(--abs-offset) * -0.4))
+        translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
+    filter: brightness(calc(100% + var(--abs-offset) * -50%));
+    transition: all 0.3s ease-out;
+}
+.card-image {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+.card-title {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 10px;
+    text-align: center;
+}
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-button.prev {
+    left: 20px;
+}
+.nav-button.next {
+    right: 20px;
+}
