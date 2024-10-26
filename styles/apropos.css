@@ -6,17 +6,17 @@ body {
     font-size: 1rem;
 }
 
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .company-name {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ccb0ff;
     font-family: 'Orbitron', sans-serif;
-}
-
-.main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .section-heading {
@@ -51,18 +51,18 @@ body {
     gap: 30px;
 }
 
-.text-content {
+.text-content, .founder-profile {
     flex: 1;
     padding: 20px;
     background-color: #2B2B2B;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    font-size: 1rem;
     color: #E0E0E0;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
 }
 
-.text-content:hover {
+.text-content:hover, .founder-profile:hover, .stat-block:hover {
     transform: translateY(-5px);
 }
 
@@ -103,22 +103,8 @@ body {
     gap: 30px;
 }
 
-.founder-profile {
-    text-align: center;
-    background-color: #2B2B2B;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    font-size: 1rem;
-}
-
 .founder-profile h3 {
     font-family: 'Orbitron', sans-serif;
-}
-
-.founder-profile:hover {
-    transform: translateY(-5px);
 }
 
 .founder-photo {
@@ -137,7 +123,6 @@ body {
     object-fit: cover;
     border-radius: 50%;
 }
-
 
 .founder-profile:hover .founder-photo {
     transform: scale(1.1);
@@ -160,10 +145,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.stat-block:hover {
-    transform: translateY(-5px);
-}
-
 .stat-number {
     font-size: 3rem;
     font-weight: bold;
@@ -180,10 +161,6 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.input-group {
-    margin-bottom: 20px;
 }
 
 .input-group label {
@@ -212,12 +189,112 @@ body {
     box-shadow: 0 0 0 2px rgba(195, 0, 255, 0.3);
 }
 
+/* Ligne du temps */
+.timeline-horizontal {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.timeline-horizontal::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    background-color: #7d37e9;
+    width: 100%;
+    z-index: 0;
+}
+
+.timeline-horizontal .timeline-item {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1;
+    animation: fadeInRight 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.timeline-horizontal .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-horizontal .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-horizontal .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+.timeline-horizontal .timeline-icon {
+    position: absolute;
+    background-color: #7d37e9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-horizontal .timeline-content {
+    background-color: #2B2B2B;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.timeline-horizontal .timeline-content h3 {
+    color: #ccb0ff;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.timeline-horizontal .timeline-content p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translate3d(40px, 0, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@media (max-width: 768px) {
+    .timeline-horizontal {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-horizontal::before {
+        width: 4px;
+        height: 100%;
+        left: 20px;
+        top: 0;
+        transform: none;
+    }
+
+    .timeline-horizontal .timeline-item {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 50px;
+    }
+
+    .timeline-horizontal .timeline-icon {
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .timeline-horizontal .timeline-content {
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
 @media (min-width: 768px) {
     .split-content {
         flex-direction: row;
     }
 
-    .founders-wrapper {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+    .found
