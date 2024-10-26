@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     navbarToggle.addEventListener('click', function() {
         navbarDefault.classList.toggle('active');
+        navbarToggle.setAttribute('aria-expanded', navbarDefault.classList.contains('active'));
     });
 
     // Close the menu when clicking outside of it
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (!isClickInsideNavbar && !isClickOnToggle && navbarDefault.classList.contains('active')) {
             navbarDefault.classList.remove('active');
+            navbarToggle.setAttribute('aria-expanded', 'false');
         }
     });
 
@@ -20,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         if (window.innerWidth >= 768) { // md breakpoint
             navbarDefault.classList.remove('active');
-        } else if (!navbarDefault.classList.contains('active')) {
-            navbarDefault.classList.add('active');
+            navbarToggle.setAttribute('aria-expanded', 'false');
         }
     });
 });

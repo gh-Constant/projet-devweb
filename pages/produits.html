@@ -1,98 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydra</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
-    <style>
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-
-        .animated-gradient {
-            background: linear-gradient(-45deg, #8b5cf6, #7d37ea, #7836da);
-            background-size: 200% 200%;
-            animation: gradient 5s ease infinite;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra</title>
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <script src="../js/navbar.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white dark:bg-gray-900/95">
-
-<nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="../assets/hydra/logo.png" class="h-20" alt="Hydra Logo" />
-            <span style="font-family: 'Orbitron', sans-serif" class="self-center text-2xl font-semibold whitespace-nowrap animated-gradient">Hydra Software</span>
-        </a>
-        <button id="navbar-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-            </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                    <a href="../index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
-                </li>
-                <li>
-                    <a class="block py-2 px-3 text-white bg-purple-700 rounded md:bg-transparent md:text-purple-500 md:p-0 dark:text-white md:dark:text-purple-500" aria-current="page">Produits</a>
-                </li>
-                <li>
-                    <a href="./panier.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Panier</a>
-                </li>
-                <li>
-                    <a href="./apropos.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">A propos</a>
-                </li>
-            </ul>
-        </div>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo-container">
+      <img src="../assets/hydra/logo.png" class="logo" alt="Hydra Logo" />
+      <span class="company-name">Hydra Software</span>
+    </a>
+    <button id="navbar-toggle" type="button" aria-controls="navbar-default" aria-expanded="false">
+      <svg class="toggle-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <div class="navbar-menu" id="navbar-default">
+      <ul class="nav-list">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a class="active">Produits</a></li>
+        <li><a href="./panier.html">Panier</a></li>
+        <li><a href="./apropos.html">A propos</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const navbarToggle = document.getElementById('navbar-toggle');
-        const navbarDefault = document.getElementById('navbar-default');
-
-        navbarToggle.addEventListener('click', function() {
-            navbarDefault.classList.toggle('hidden');
-        });
-
-        // Close the menu when clicking outside of it
-        document.addEventListener('click', function(event) {
-            const isClickInsideNavbar = navbarDefault.contains(event.target);
-            const isClickOnToggle = navbarToggle.contains(event.target);
-
-            if (!isClickInsideNavbar && !isClickOnToggle && !navbarDefault.classList.contains('hidden')) {
-                navbarDefault.classList.add('hidden');
-            }
-        });
-
-        // Ensure the menu is visible on larger screens
-        window.addEventListener('resize', function() {
-            if (window.innerWidth >= 768) { // md breakpoint
-                navbarDefault.classList.remove('hidden');
-            } else {
-                navbarDefault.classList.add('hidden');
-            }
-        });
-    });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
