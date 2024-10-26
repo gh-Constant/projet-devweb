@@ -126,6 +126,15 @@
     background-color: #7c3aed;
 }
 
+footer {
+    background-color: #18191E;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
 @media (max-width: 768px) {
     .banner {
         height: 250px; /* Reduce banner height for smaller screens */

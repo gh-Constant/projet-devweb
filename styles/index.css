@@ -112,7 +112,7 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.view-all-btn:hover, .learn-more-btn:hover {
+.btn:hover {
     background-color: #6422c7;
 }
 
