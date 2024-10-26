@@ -12,6 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<!-- Menu de navigation -->
+
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo-container">
@@ -34,6 +37,8 @@
     </div>
   </nav>
 
+<!-- Banniere -->
+
   <div class="banner">
     <div class="banner-content">
       <span class="title1">Hydra Software</span>
@@ -41,9 +46,11 @@
     </div>
   </div>
 
+<!-- Presentation des produits phare, et redirection vers la page produis -->
+
   <main>
     <section id="featured-products">
-      <h2>Nos Produits Vedettes</h2>
+      <h2 class="title3">Nos Produits Vedettes</h2>
       <div class="product-list">
         <div class="product-card">
           <img src="./public/hydra/valorantbanner.png" alt="Valorant">
@@ -69,14 +76,24 @@
       </div>
       <a href="./pages/produits.html" class="view-all-btn">Voir tous les produits</a>
     </section>
-
+<!-- Presentation de la page a propos et redirect -->
     <section id="about-us">
-      <h2>Qui Sommes-Nous ?</h2>
+      <h2 class="title3">Qui Sommes-Nous ?</h2>
       <div class="about-content">
-        <p>Hydra Software est une équipe passionnée de développeurs et de gamers, dédiée à créer des outils innovants pour améliorer votre expérience de jeu. Notre mission est de vous fournir des solutions performantes et accessibles pour que vous puissiez vous concentrer sur l'essentiel : jouer et progresser.</p>
+        <p class="text">Hydra Software est une équipe passionnée de développeurs et de gamers, dédiée à créer des outils innovants pour améliorer votre expérience de jeu. Notre mission est de vous fournir des solutions performantes et accessibles pour que vous puissiez vous concentrer sur l'essentiel : jouer et progresser.</p>
         <a href="./pages/apropos.html" class="learn-more-btn">En savoir plus</a>
       </div>
     </section>
+
+<!-- Ajout directe de produit aux paniers valider le pagnier sur la page panier -->
+    <section id="checkout">
+      <h2 class="title3">Panier</h2>
+      <div class="checkout-content">
+        <p class="text">Ajoutez nos produits vedettes à votre panier dès maintenant</p>
+        <a href="./pages/panier.html" class="checkout-btn">Valider le panier</a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
