@@ -100,7 +100,7 @@ h2 {
     color: #E0E0E0;
 }
 
-.view-all-btn, .learn-more-btn {
+.btn {
     display: block;
     width: max-content;
     margin: 2rem auto 0;
@@ -116,7 +116,7 @@ h2 {
     background-color: #6422c7;
 }
 
-.about-content {
+.content {
     background-color: #2a2a2a;
     border-radius: 8px;
     padding: 2rem;
