@@ -5,66 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hydra</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
     <style>
-        @keyframes slideDown {
-            0% { max-height: 0; opacity: 0; }
-            100% { max-height: 300px; opacity: 1; }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
-        .slide-down {
-            animation: slideDown 0.3s ease-out;
+
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #8b5cf6, #7d37ea, #7836da);
+            background-size: 200% 200%;
+            animation: gradient 5s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-gray-900">
-<nav class="bg-[#1a1a1a] text-white py-3 px-4">
-    <div class="container mx-auto">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-40 -ml-16">
-                <div class="flex items-center">
-                    <img src="../assets/hydra/logo.png" alt="Hydra logo" class="h-20 w-20 mr-2">
-                    <span class="text-xl font-bold">HYDRA SOFTWARES</span>
-                </div>
-                <div class="">
-                    <span class="text-xl font-bold">ACCEUIL</span>
-                </div>
+<body class="bg-white dark:bg-gray-900/95">
 
-            </div>
-
-
-
-
-            <button id="hamburger" class="md:hidden text-white focus:outline-none">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="md:hidden hidden mt-4 slide-down">
-            <a href="#" class="block bg-[#5865f2] hover:bg-[#4752c4] text-white px-4 py-2 rounded flex items-center transition duration-300 mb-2">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
-                </svg>
-                DISCORD
-            </a>
-            <div class="flex items-center space-x-2 mb-2">
-                <span class="text-gray-400">Existing user?</span>
-                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Sign In</a>
-            </div>
-            <a href="#" class="block bg-[#2c2c2c] hover:bg-[#3a3a3a] text-white px-4 py-2 rounded transition duration-300">
-                Sign Up
-            </a>
+<nav class="bg-gray-100 border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../assets/hydra/logo.png" class="h-20" alt="Hydra Logo" />
+            <span style="font-family: 'Orbitron', sans-serif" class="self-center text-2xl font-semibold whitespace-nowrap animated-gradient">Hydra Software</span>
+        </a>
+        <button id="navbar-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="../index.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Accueil</a>
+                </li>
+                <li>
+                    <a class="block py-2 px-3 text-white bg-purple-700 rounded md:bg-transparent md:text-purple-500 md:p-0 dark:text-white md:dark:text-purple-500" aria-current="page">Produits</a>
+                </li>
+                <li>
+                    <a href="./panier.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Panier</a>
+                </li>
+                <li>
+                    <a href="./apropos.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:text-white md:dark:hover:text-purple-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">A propos</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
 
 <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navbarDefault = document.getElementById('navbar-default');
 
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+        navbarToggle.addEventListener('click', function() {
+            navbarDefault.classList.toggle('hidden');
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function(event) {
+            const isClickInsideNavbar = navbarDefault.contains(event.target);
+            const isClickOnToggle = navbarToggle.contains(event.target);
+
+            if (!isClickInsideNavbar && !isClickOnToggle && !navbarDefault.classList.contains('hidden')) {
+                navbarDefault.classList.add('hidden');
+            }
+        });
+
+        // Ensure the menu is visible on larger screens
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) { // md breakpoint
+                navbarDefault.classList.remove('hidden');
+            } else {
+                navbarDefault.classList.add('hidden');
+            }
+        });
     });
 </script>
+
 </body>
 </html>
