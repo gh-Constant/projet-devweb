@@ -1,9 +1,8 @@
 body {
-    background: linear-gradient(135deg, #1E1E1E, #000000);
-    font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    background-color: #121712;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
     color: #E0E0E0;
-    font-size: 1rem;
 }
 
 .banner {
@@ -35,21 +34,13 @@ body {
 .title1 {
     font-size: 2rem;
     font-weight: 600;
-    background: linear-gradient(-45deg, #ffffff, #e8e8e8, #d2d0d0);
-    background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
 }
 
 .title2 {
     font-size: 5rem;
     font-weight: 600;
-    background: linear-gradient(-45deg, #8b5cf6, #7d37ea, #7836da);
-    background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #8b5cf6;
     margin-left: 10%;
 }
 
