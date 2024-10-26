@@ -9,93 +9,92 @@
     <link rel="stylesheet" href="../styles/menu.css">
     <script src="../js/menu.js"></script>
 </head>
+
 <body>
-
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="../index.html" class="logo-container">
-            <img src="../assets/hydra/logo.png" class="logo" alt="Hydra Logo" />
-            <span class="company-name">Hydra Software</span>
-        </a>
-        <button id="navbar-toggle" type="button" aria-controls="navbar-default" aria-expanded="false">
-            <svg class="toggle-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-        <div class="navbar-menu" id="navbar-default">
-            <ul class="nav-list">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="./produits.html">Produits</a></li>
-                <li><a class="active">Panier</a></li>
-                <li><a href="./apropos.html">A propos</a></li>
-            </ul>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-container">
+                <img src="../assets/hydra/logo.png" class="logo" alt="Hydra Logo" />
+                <span class="company-name">Hydra Software</span>
+            </a>
+            <button id="navbar-toggle" type="button" aria-controls="navbar-default" aria-expanded="false">
+                <svg class="toggle-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="navbar-menu" id="navbar-default">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="./produits.html">Produits</a></li>
+                    <li><a class="active">Panier</a></li>
+                    <li><a href="./apropos.html">A propos</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+    
 
-    <div class="menubar">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-
-
-    <h1>Votre Panier</h1>
-
-    <table id="cart-table">
-        <thead>
-            <tr>
-                <th>Produit</th>
-                <th></th>
-                <th>Prix</th>
-                <th>Quantité</th>
-                <th>Total</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr data-id="1" data-price="199.99">
-                <td>Programme 1</td>
-                <td><img src="" alt=""></td>
-                <td>199.99 €</td>
-                <td><input type="number" value="2" class="quantite"></td>
-                <td class="item-total">399.98 €</td>
-                <td><button class="supprime">Supprimer</button></td>
-            </tr>
-            <tr data-id="2" data-price="149.99">
-                <td>Programme 2</td>
-                <td><img src="" alt=""></td>
-                <td>149.99 €</td>
-                <td><input type="number" value="1" class="quantite"></td>
-                <td class="item-total">149.99 €</td>
-                <td><button class="supprime">Supprimer</button></td>
-            </tr>
-            <tr data-id="3" data-price="79.99">
-                <td>Programme 3</td>
-                <td><img src="" alt=""></td>
-                <td>79.99 €</td>
-                <td><input type="number" value="3" class="quantite"></td>
-                <td class="item-total">239.97 €</td>
-                <td><button class="supprime">Supprimer</button></td>
-            </tr>
-        </tbody>
-    </table>
-
-    <div class="fin">
-        <div id="cart-total" class="total">Total : 789.94 €</div>
-        <button class="passer_commande">Passer la commande</button>
-    </div>
+    <main>
+        
+        <h1>Votre Panier</h1>
+    
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-id="1" data-price="199.99">
+                    <td>
+                        <div>
+                            <img src="../assets/hydra/logo.png" alt="" class="image">
+                            <p>Programme 1</p>
+                        </div>
+                    </td>
+                    <td>199.99 €</td>
+                    <td><input type="number" value="2" class="quantite"></td>
+                    <td class="item-total">399.98 €</td>
+                    <td><button class="supprime">Supprimer</button></td>
+                </tr>
+                <tr data-id="2" data-price="149.99">
+                    <td>
+                        <div>
+                            <img src="" alt="" class="image">
+                            <p>Programme 2</p>
+                        </div>
+                    </td>
+                    <td>149.99 €</td>
+                    <td><input type="number" value="1" class="quantite"></td>
+                    <td class="item-total">149.99 €</td>
+                    <td><button class="supprime">Supprimer</button></td>
+                </tr>
+                <tr data-id="3" data-price="79.99">
+                    <td>
+                        <div>
+                            <img src="" alt="" class="image">
+                            <p>Programme 3</p>
+                        </div>
+                    </td>
+                    <td>79.99 €</td>
+                    <td><input type="number" value="3" class="quantite"></td>
+                    <td class="item-total">239.97 €</td>
+                    <td><button class="supprime">Supprimer</button></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <div class="fin">
+            <div id="cart-total" class="total">Total : 789.94 €</div>
+            <button class="passer_commande">Passer la commande</button>
+        </div>
+        
+    </main>
 
     
     <script src="../js/menu.js"></script>

@@ -1,7 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+*{
+    color: #dee0e7;
 }
 
 table {
@@ -13,18 +17,23 @@ table {
 th, td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #111827;
 }
 
 th {
-    background-color: #f8f9fa;
+    background-color: #111827;
     font-weight: bold;
+}
+
+.image {
+    width: 150px;
 }
 
 .quantite {
     width: 50px;
     padding: 5px;
     text-align: center;
+    color: black;
 }
 
 .supprime {
@@ -64,4 +73,49 @@ th {
 
 .passer_commande:hover {
     background-color: #27ae60;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        max-width: 1200px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead {
+        display: none; 
+    }
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+    }
+    td {
+        text-align: center; 
+        padding: 10px;
+        border: none;
+        position: relative;
+        min-height: 30px;
+    }
+    
+    td:before {
+        display: none;
+    }
+    .product-info {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .product-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .quantity-input {
+        margin: 0 auto; 
+    }
+    .remove-button {
+        margin: 10px auto 0;
+    }
+
 }
