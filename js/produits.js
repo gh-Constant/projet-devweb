@@ -50,7 +50,6 @@ function createProductCard(product) {
 
 function addToCart(productName) {
     alert(`${productName} ajouté au panier!`);
-    // Implement actual cart functionality here
 }
 
 document.addEventListener('DOMContentLoaded', () => {
