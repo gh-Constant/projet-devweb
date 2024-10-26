@@ -32,4 +32,4 @@ Ceci est un projet étudiant à but éducatif, il a pour objectif de nous appren
 
 - Maxime Miguet : j'ai travaillé sur la page panier, j'ai fait le style de la page panier en minspirent de celui de la page de constant. j'ai fait le javascript de la page panier avec Constant. j'ai fait le footer de la page panier, et j'ai fait mis la bannière sur le reste du site.
 
-- Zakaria Talali : j'ai travaillé sur la page a propos, j'ai fait le style de la page a propos. j'ai inventer le texte de la page a propos, et créer une identité visuelle pour le site. j'ai ajouter des images et descriptions de chaqu'un des membres du groupe.
+- Zakaria Talali : j'ai travaillé sur la page a propos, j'ai fait le style de la page a propos. j'ai inventer le texte de la page a propos, et créer une identité visuelle pour le site. j'ai ajouter des images et descriptions de chaqu'un des membres du groupe. j'ai aussi parler de l'histoire du site et de son but, et ajoueter un formulaire de contact.
