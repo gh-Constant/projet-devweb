@@ -35,63 +35,69 @@
         </div>
     </nav>
     
+    <div class="banner">
+        <div class="banner-content">
+            <span class="title1">Hydra Software</span>
+            <span class="title2">Panier</span>
+        </div>
+    </div>
 
     <main>
         
-        <h1>Votre Panier</h1>
+        <h1>Votre panier</h1>
     
         <table id="cart-table">
             <thead>
                 <tr>
                     <th>Produit</th>
                     <th>Prix</th>
-                    <th>Quantité</th>
+                    <th>Nombre de mois</th>
                     <th>Total</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr data-id="1" data-price="199.99">
+                <tr data-id="1" data-price="49.99">
                     <td>
                         <div>
-                            <img src="../public/hydra/logo.png" alt="" class="image">
-                            <p>Programme 1</p>
+                            <img src="../public/hydra/valorantbanner.png" alt="Valorant" class="image">
+                            <p>Valorant</p>
                         </div>
                     </td>
-                    <td>199.99 €</td>
+                    <td>49.99 €</td>
                     <td><input type="number" value="2" class="quantite"></td>
-                    <td class="item-total">399.98 €</td>
+                    <td class="item-total"></td>
                     <td><button class="supprime">Supprimer</button></td>
                 </tr>
-                <tr data-id="2" data-price="149.99">
+                <tr data-id="2" data-price="39.99">
                     <td>
                         <div>
-                            <img src="" alt="" class="image">
-                            <p>Programme 2</p>
+                            <img src="../public/hydra/cs2banner.png" alt="Counter Strike 2" class="image">
+                            <p>Counter Strike 2</p>
                         </div>
                     </td>
-                    <td>149.99 €</td>
+                    <td>39.99 €</td>
                     <td><input type="number" value="1" class="quantite"></td>
-                    <td class="item-total">149.99 €</td>
+                    <td class="item-total"></td>
                     <td><button class="supprime">Supprimer</button></td>
                 </tr>
-                <tr data-id="3" data-price="79.99">
+                <tr data-id="3" data-price="34.99">
                     <td>
                         <div>
-                            <img src="" alt="" class="image">
-                            <p>Programme 3</p>
+                            <img src="../public/hydra/apexbanner.png" alt="Apex Legends" class="image">
+                            <p>Apex Legends</p>
                         </div>
                     </td>
-                    <td>79.99 €</td>
+                    <td>34.99 €</td>
                     <td><input type="number" value="3" class="quantite"></td>
-                    <td class="item-total">239.97 €</td>
+                    <td class="item-total"></td>
                     <td><button class="supprime">Supprimer</button></td>
                 </tr>
             </tbody>
         </table>
     
         <div class="fin">
-            <div id="cart-total" class="total">Total : 789.94 €</div>
+            <div id="cart-total" class="total"></div>
             <button class="passer_commande">Passer la commande</button>
         </div>
         
