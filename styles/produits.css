@@ -98,5 +98,45 @@
 
 .product-card h3 {
     margin-top: 0;
-    color: #ffffff;
-    font-family: 'Orbitron',
+    color: #333;
+}
+
+.product-card p {
+    flex-grow: 1;
+    color: #666;
+}
+
+.product-card button {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #7c3aed;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 250px; /* Reduce banner height for smaller screens */
+    }
+
+    .banner-content {
+        width: 80%;
+        margin-right: 10%; /* Center content on smaller screens */
+        padding-right: 0;
+    }
+
+    .title1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .title2 {
+        font-size: 3rem; /* Smaller font size for mobile */
+        margin-left: 5%; /* Adjust margin */
+    }
+}
