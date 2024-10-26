@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hydra - Apropos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/apropos.css">
     <script src="../js/menu.js"></script>
     <link rel="icon" type="image/x-icon" href="../public/hydra/icon.ico">
 </head>
@@ -34,76 +33,116 @@
     </div>
 </nav>
 
-    <header>
-        <!-- ici il faut mettre le header mais j ai pas encore decider quoi mettre -->
-    </header>
+<main>
+    <section id="about">
+        <div class="main-container">
+            <h2 class="section-heading">A PROPOS DE NOUS</h2>
+            <div class="split-content">
+                <div class="text-content">
+                    <p>Hydra, c'est une équipe de passionnés, dédiée à offrir des solutions pratiques et légales pour améliorer votre expérience de jeu.</p>
+                    <a href="#" class="action-btn">Découvrir</a>
+                </div>
+                <div class="image-box"></div>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <!-- ici c la section ou on presente qui on est -->
-        <section>
-            <h1>Qui sommes-nous ?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod convallis sapien, ac varius lorem. Integer vitae velit nunc.</p>
-        </section>
+    <section id="mission">
+        <div class="main-container">
+            <h2 class="section-heading">NOTRE MISSION</h2>
+            <div class="split-content">
+                <div class="image-box"></div>
+                <div class="text-content">
+                    <p>Notre mission est de fournir aux gamers des cheats légaux qui optimisent leur gameplay sans compromettre l'intégrité du jeu. Nous croyons en un gaming plus facile et accessible pour tous.</p>
+                    <a href="#" class="action-btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ici on parle de l historique de l entreprise -->
-        <section>
-            <h2>Notre histoire</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Duis ultricies orci vel ex dapibus, sed consectetur lorem aliquet.</p>
-        </section>
+    <section id="founders">
+        <div class="main-container">
+            <h2 class="section-heading">NOS FONDATEURS</h2>
+            <div class="founders-wrapper">
+                <div class="founder-profile">
+                    <div class="founder-photo">
+                        <img src="images/constant.jpg" alt="SUCHET Constant">
+                    </div>
+                    <h3>SUCHET Constant</h3>
+                    <p>Responsable de la page d'accueil, Constant sait comment captiver l'attention dès les premières secondes et guider les visiteurs.</p>
+                </div>
+                <div class="founder-profile">
+                    <div class="founder-photo">
+                        <img src="images/zakaria.jpg" alt="TALALI ZAKARIA">
+                    </div>
+                    <h3>TALALI ZAKARIA</h3>
+                    <p>Créateur de la page À propos, Zakaria est passionné par le développement de contenus qui racontent notre histoire avec authenticité.</p>
+                </div>
+                <div class="founder-profile">
+                    <div class="founder-photo">
+                        <img src="images/tahar.jpg" alt="TOUZI TAHAR Amin">
+                    </div>
+                    <h3>TOUZI TAHAR Amin</h3>
+                    <p>Créateur des pages des produits, Tahar est un expert en expérience utilisateur, rendant chaque produit facilement accessible.</p>
+                </div>
+                <div class="founder-profile">
+                    <div class="founder-photo">
+                        <img src="images/maxime.jpg" alt="MIGUET Maxime">
+                    </div>
+                    <h3>MIGUET Maxime</h3>
+                    <p>Développeur de la page panier, Maxime s'assure que les achats se font en toute simplicité, avec une interface fluide et intuitive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
-        <!-- la mission de l entreprise, pk on existe -->
-        <section>
-            <h2>Notre mission</h2>
-            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </section>
+    <section id="stats">
+        <div class="main-container">
+            <h2 class="section-heading">Nos Chiffres</h2>
+            <div class="statistics-container">
+                <div class="stat-block">
+                    <div class="stat-number">100K+</div>
+                    <p>Téléchargements</p>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">50+</div>
+                    <p>Jeux supportés</p>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-number">98%</div>
+                    <p>Taux de satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- ici c la section de l equipe qui travail dans l entreprise -->
-        <section>
-            <h2>Notre équipe</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula, elit vitae ultricies tempus, nisl nisi tristique est, at cursus arcu elit et eros.</p>
-        </section>
+    <section id="contact">
+        <div class="main-container">
+            <h2 class="section-heading">Contactez-nous</h2>
+            <form class="form-wrapper">
+                <div class="input-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="action-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</main>
 
-        <!-- nos valeurs principales sont ici -->
-        <section>
-            <h2>Nos valeurs</h2>
-            <ul>
-                <li>Intégrité</li>
-                <li>Innovation</li>
-                <li>Responsabilité</li>
-                <li>Service client</li>
-            </ul>
-        </section>
+<footer>
+    <!-- ici y aura le footer mais c vide pr l instant -->
+</footer>
 
-        <!-- ce que disent les clients sur nous -->
-        <section>
-            <h2>Ce que disent nos clients</h2>
-            <blockquote>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
-                <footer>— Nom du Client</footer>
-            </blockquote>
-        </section>
-
-        <!-- section ou on parle des partenaires avec qui on bosse -->
-        <section>
-            <h2>Nos partenaires</h2>
-            <p>Nous travaillons avec des leaders de l'industrie pour vous offrir les meilleurs logiciels. Voici quelques-uns de nos partenaires :</p>
-            <ul>
-                <li>Partenaire 1</li>
-                <li>Partenaire 2</li>
-                <li>Partenaire 3</li>
-            </ul>
-        </section>
-
-        <!-- ici on met les infos pour contacter l entreprise -->
-        <section>
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question ou demande, vous pouvez nous joindre à l'adresse suivante : <a href="mailto:contact@nomdusite.com">contact@nomdusite.com</a></p>
-        </section>
-    </main>
-
-    <footer>
-        <!-- ici y aura le footer mais c vide pr l instant -->
-    </footer>
 
 </body>
 </html>
