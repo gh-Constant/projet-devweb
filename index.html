@@ -7,8 +7,6 @@
   <link rel="icon" type="image/x-icon" href="./public/hydra/icon.ico">
   <link rel="stylesheet" href="./styles/menu.css">
   <link rel="stylesheet" href="./styles/index.css">
-  <script src="./js/menu.js" defer></script>
-  <script src="./js/index.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
@@ -46,8 +44,28 @@
   <main>
     <section id="featured-products">
       <h2>Nos Produits Vedettes</h2>
-      <div id="product-list" class="product-list">
-        <!-- Les produits seront insérés dynamiquement ici -->
+      <div class="product-list">
+        <div class="product-card">
+          <img src="./public/hydra/valorantbanner.png" alt="Valorant">
+          <div class="product-card-content">
+            <h3>Valorant</h3>
+            <p>Améliorez vos performances dans Valorant</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./public/hydra/cs2banner.png" alt="Counter Strike 2">
+          <div class="product-card-content">
+            <h3>Counter Strike 2</h3>
+            <p>Dominez vos adversaires dans CS2</p>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./public/hydra/apexbanner.png" alt="Apex Legends">
+          <div class="product-card-content">
+            <h3>Apex Legends</h3>
+            <p>Devenez le champion d'Apex Legends</p>
+          </div>
+        </div>
       </div>
       <a href="./pages/produits.html" class="view-all-btn">Voir tous les produits</a>
     </section>

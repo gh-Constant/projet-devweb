@@ -34,21 +34,13 @@ body {
 .title1 {
     font-size: 2rem;
     font-weight: 600;
-    background: linear-gradient(-45deg, #ffffff, #e8e8e8, #d2d0d0);
-    background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #ffffff;
 }
 
 .title2 {
     font-size: 5rem;
     font-weight: 600;
-    background: linear-gradient(-45deg, #8b5cf6, #7d37ea, #7836da);
-    background-size: 200% 200%;
-    animation: gradient 5s ease infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #8b5cf6;
     margin-left: 10%;
 }
 
@@ -164,8 +156,3 @@ footer {
     }
 }
 
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
