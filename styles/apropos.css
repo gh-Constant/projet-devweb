@@ -6,6 +6,54 @@ body {
     font-size: 1rem;
 }
 
+.banner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../public/hydra/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40%;
+    padding-right: 5%;
+}
+
+.title1, .title2, .title3 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+
+.title1 {
+    font-size: 2rem;
+    font-weight: 600;
+    background: linear-gradient(-45deg, #ffffff, #e8e8e8, #d2d0d0);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title2 {
+    font-size: 5rem;
+    font-weight: 600;
+    background: linear-gradient(-45deg, #8b5cf6, #7d37ea, #7836da);
+    background-size: 200% 200%;
+    animation: gradient 5s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 10%;
+}
+
+
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -297,4 +345,4 @@ body {
         flex-direction: row;
     }
 
-    .found
+}
