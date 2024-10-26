@@ -1,4 +1,4 @@
-# [Site de vente de cheats pour jeux vidéo](https://gh-constant.github.io/projet-devweb/)
+# [Hydra Software](https://gh-constant.github.io/projet-devweb/)
 
 ## Description
 Ce projet étudiant, réalisé à but éducatif, vise à nous familiariser avec les technologies web et le développement d'un site de commerce en ligne.
