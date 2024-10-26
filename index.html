@@ -1,89 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hydra - Acceuil</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="../styles/menu.css">
-    <link rel="icon" type="image/x-icon" href="public/hydra/icon.ico">
-    <script src="../js/menu.js"></script>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #240063, red, blue);
-            background-attachment: fixed;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra - Accueil</title>
+  <link rel="icon" type="image/x-icon" href="./public/hydra/icon.ico">
+  <link rel="stylesheet" href="./styles/menu.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/index.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
 </head>
-<!-- Navbarr -->
-
-<!-- /Navbarr -->
-<body class="body">
-
-<nav class="navbar">
+<body>
+  <nav class="navbar">
     <div class="nav-container">
-        <a href="../index.html" class="logo-container">
-            <img src="../assets/hydra/logo.png" class="logo" alt="Hydra Logo" />
-            <span class="company-name">Hydra Software</span>
-        </a>
-        <button id="navbar-toggle" type="button" aria-controls="navbar-default" aria-expanded="false">
-            <svg class="toggle-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </button>
-        <div class="navbar-menu" id="navbar-default">
-            <ul class="nav-list">
-                <li><a class="active">Accueil</a></li>
-                <li><a href="pages/produits.html">Produits</a></li>
-                <li><a href="pages/panier.html">Panier</a></li>
-                <li><a href="pages/apropos.html">A propos</a></li>
-            </ul>
-        </div>
+      <a href="index.html" class="logo-container">
+        <img src="./public/hydra/logo.png" class="logo" alt="Hydra Logo" />
+        <span class="company-name">Hydra Software</span>
+      </a>
+      <button id="navbar-toggle" type="button" aria-controls="navbar-default" aria-expanded="false">
+        <svg class="toggle-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="navbar-menu" id="navbar-default">
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Accueil</a></li>
+          <li><a href="./pages/produits.html">Produits</a></li>
+          <li><a href="./pages/panier.html">Panier</a></li>
+          <li><a href="./pages/apropos.html">A propos</a></li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<!-- presentation de nos produits avec un page de recherche pour les jeux que l'on veux  -->
- <div class="Titre">
-    <h1>Private cheats<br>A wide selection of<br> cheats for games</h1>
-</div>
-
-<!-- Carrousel ne nos jeux  -->
-
-<div class="carousel">
-    <div class="carousel-container">
-        <div class="card floating" style="--offset: -2; animation-delay: 0.2s;">
-            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
-            <div class="card-title">PUBG</div>
-        </div>
-        <div class="card floating" style="--offset: -1; animation-delay: 0.4s;">
-            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
-            <div class="card-title">COD: MW3 - WARZONE</div>
-        </div>
-        <div class="card floating" style="--offset: 0; animation-delay: 0.6s;">
-            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
-            <div class="card-title">Escape from Tarkov</div>
-        </div>
-        <div class="card floating" style="--offset: 1; animation-delay: 0.8s;">
-            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
-            <div class="card-title">APEX</div>
-        </div>
-        <div class="card floating" style="--offset: 2; animation-delay: 1s;">
-            <div class="card-image" style="background-image: url('/placeholder.svg?height=264&width=220')"></div>
-            <div class="card-title">DayZ</div>
-        </div>
+  <div class="banner">
+    <div class="banner-content">
+      <span class="title1">Hydra Software</span>
+      <span class="title2">Accueil</span>
     </div>
-</div>
-<button class="nav-button prev">&lt;</button>
-<button class="nav-button next">&gt;</button>
-<!-- /fin de presentation -->
+  </div>
 
+  <main>
+    <section id="featured-products">
+      <h2>Nos Produits Vedettes</h2>
+      <div id="product-list" class="product-list">
+        <!-- Les produits seront insérés dynamiquement ici -->
+      </div>
+      <a href="./pages/produits.html" class="view-all-btn">Voir tous les produits</a>
+    </section>
 
-<!--  -->
+    <section id="about-us">
+      <h2>Qui Sommes-Nous ?</h2>
+      <div class="about-content">
+        <p>Hydra Software est une équipe passionnée de développeurs et de gamers, dédiée à créer des outils innovants pour améliorer votre expérience de jeu. Notre mission est de vous fournir des solutions performantes et accessibles pour que vous puissiez vous concentrer sur l'essentiel : jouer et progresser.</p>
+        <a href="./pages/apropos.html" class="learn-more-btn">En savoir plus</a>
+      </div>
+    </section>
+  </main>
 
-
-    
+  <footer>
+    <p>&copy; 2024 Hydra Software. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
