@@ -1,11 +1,11 @@
 body {
-    background-color: #151c2a;
+    background-color: #121712;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
 
 .navbar {
-    background-color: #111827;
+    background-color: #18191E;
     border-radius: 1rem;
 }
 
@@ -76,7 +76,7 @@ body {
 .navbar-menu {
     display: none;
     width: 100%;
-    background-color: #111827;
+    background-color: #18191E;
     border-radius: 1rem;
 }
 
